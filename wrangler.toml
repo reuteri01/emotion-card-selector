@@ -1,0 +1,17 @@
+
+name = "emotion-card-selector"
+type = "javascript"
+account_id = "your-account-id"
+workers_dev = true
+
+[build]
+command = "npm run build"
+upload.format = "service-worker"
+
+[site]
+bucket = ".next"
+entry-point = "."
+
+[env.production]
+name = "emotion-card-selector"
+
